@@ -1,4 +1,8 @@
+
+
 const args = process.argv.splice(2)
+.filter(time => !isNaN(time))
+.filter(time => time >= 0);
 console.log(args);
 
 setTimeout(() => {
